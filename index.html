@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+        <div class="timer-select">
+            <label for="timerLimit">Select Time:</label>
+            <select id="timerLimit">
+                <option value="60">1 min</option>
+                <option value="300">5 min</option>
+                <option value="600">10 min</option>
+            </select>
+        </div>
+        <div class="stats">
+            <p>Time: <span id="timer">60</span>s</p>
+            <p>WPM: <span id="wpm">0</span></p>
+            <p>Accuracy: <span id="accuracy">0</span>%</p>
+        </div>
+        <div class="text-display" id="textDisplay"></div>
+        <textarea id="textInput" rows="3" placeholder="Start typing here..."></textarea>
+        <div class="button-group">
+            <button id="startBtn">Start Test</button>
+            <button id="resetBtn">Reset Test</button>
+        </div>
+    </div>
+    <script type="module" src="paragraphs.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
