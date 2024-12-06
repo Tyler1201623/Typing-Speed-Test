@@ -149,4 +149,23 @@ button:hover {
         width: 100%;
         max-width: none;
     }
+
+    .text-display {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.95);
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+        border-bottom: 2px solid #e2e8f0;
+    }
+
+    textarea {
+        height: clamp(100px, 15vh, 150px);
+        margin-top: 0.5rem;
+    }
+
+    .container {
+        padding: clamp(1rem, 3vw, 1.5rem);
+    }
 }
